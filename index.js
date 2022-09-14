@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
 const io = new Server(server, {
   cors: {
-    origin: "http://192.168.1.50:3000",
+    origin: "https://socket-io-front-end.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
