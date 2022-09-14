@@ -7,6 +7,10 @@ const cors = require("cors");
 app.use(cors());
 const server = http.createServer(app);
 
+app.get("/", (req, res) => {
+  res.send("Server Is Started on Port 3001");
+});
+
 const io = new Server(server, {
   cors: {
     origin: "http://192.168.1.50:3000",
